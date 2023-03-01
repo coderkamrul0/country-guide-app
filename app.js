@@ -5,7 +5,7 @@ const lodeData = () => {
     fetch(url).then(res => res.json()).then(data => displayData(data[0]))
 }
 const displayData = (data) => {
-    const {name,capital,continents,population,startOfWeek,flags} = data
+    const {name,capital,continents,population,startOfWeek,flags,currencies,maps} = data
     const displayContainer = document.getElementById('country-container');
     displayContainer.innerHTML = ''
     const div = document.createElement('div');
